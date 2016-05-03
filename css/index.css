@@ -333,21 +333,26 @@ h2 {
   opacity: .8;
 }
 .floor2 .linxian {
-  transform-origin: center -50%;
+  /*-webkit-transform-origin: center center;*/
+  transform-style:preserve-3d;
+  perspective:1200px;
   position: absolute;
-  left: 4%;
+  left: 7%;
   top: 35%;
   background: url(../images/lingxian.png) no-repeat;
-  width: 16%;
+  width: 66px;
   height: 126px;
   animation: fadeInLeft 1s linear,mov 3s linear infinite;
 }
 @keyframes mov {
   0% {
-    transform: rotateY(0deg);
+    transform: rotate3d(0,1,0,0deg);
+  }
+   40% {
+    transform: rotate3d(0,1,0,0deg);
   }
   100% {
-    transform: rotateY(360deg);
+    transform: rotate3d(0,1,0,360deg);
   }
 }
 .floor2 .shu {
@@ -435,10 +440,10 @@ h2 {
   z-index: 10;
   transform-origin: center -50%;
   position: absolute;
-  left: 4%;
+  left: 8%;
   top: 35%;
   background: url(../images/quanmian.png) no-repeat;
-  width: 16%;
+  width: 66px;
   height: 126px;
   animation: fadeInLeft 1s linear,mov 3s linear infinite;
 }
@@ -533,10 +538,11 @@ h2 {
 .floor4 .linxian {
   transform-origin: center -50%;
   position: absolute;
-  left: 4%;
+  left: 8%;
   top: 35%;
   background: url(../images/zhuanye.png) no-repeat;
-  width: 16%;
+  background-size:contain;
+  width: 66px;
   height: 126px;
   animation: fadeInLeft 1s linear,mov 3s linear infinite;
   z-index: 10;
@@ -686,10 +692,11 @@ h2 {
     font-size: 76%;
   }
   .floor2 .linxian {
-    width: 18%!important;
-    height: 18%!important;
+    width: 35px!important;
+    height: 70px!important;
     background-size: contain;
     background-repeat: no-repeat;
+    top:30%;
   }
   .floor2 .shu {
     width: 40%;
