@@ -186,7 +186,7 @@ h2 {
   position: absolute;
   left: 150px;
   top: 328px;
-  animation: slideInLeft 1s linear ;
+  
 }
 .floor1 .main1 .bing1 {
   width: 265px;
@@ -315,9 +315,13 @@ h2 {
 .floor2 .text {
   position: absolute;
   top: 35%;
-  left: 14%;
+  left:5%;
   color: #fff;
+  
+}
+.fadeInLeft{
   animation: fadeInLeft 1s linear ;
+  animation-fill-mode:forwards;
 }
 .floor2 .text h1 {
   font-size: 34px;
@@ -342,8 +346,10 @@ h2 {
   background: url(../images/lingxian.png) no-repeat;
   width: 66px;
   height: 126px;
-  animation: fadeInLeft 1s linear,mov 3s linear infinite;
+  animation: mov 2s linear infinite;;
+  /*,*/
 }
+
 @keyframes mov {
   0% {
     transform: rotate3d(0,1,0,0deg);
@@ -361,8 +367,12 @@ h2 {
   height: 427px;
   float: right;
   margin-top: 10%;
-  margin-right: 50px;
-  animation: fadeInRight 1s linear;
+  margin-right: -250px;
+ 
+}
+.fadeInRight{
+   animation: fadeInRight .5s linear;
+    animation-fill-mode:forwards;
 }
 .floor2 .shenlv {
   background: #35b568;
@@ -418,10 +428,10 @@ h2 {
 .floor3 .text {
   position: absolute;
   top: 35%;
-  left: 14%;
+  left: 5%;
   z-index: 10;
   color: #fff;
-  animation: fadeInLeft 1s linear ;
+  
 }
 .floor3 .text h1 {
   font-size: 34px;
@@ -445,7 +455,7 @@ h2 {
   background: url(../images/quanmian.png) no-repeat;
   width: 66px;
   height: 126px;
-  animation: fadeInLeft 1s linear,mov 3s linear infinite;
+  animation: mov 3s linear infinite;
 }
 .floor3 .shu {
   background: url(../images/f3-1.png) no-repeat;
@@ -453,7 +463,7 @@ h2 {
   height: 427px;
   float: right;
   margin-top: 10%;
-  animation: fadeInRight 1s linear;
+ 
 }
 .floor3 .kuai {
   width: 100%;
@@ -517,9 +527,9 @@ h2 {
 .floor4 .text {
   position: absolute;
   top: 35%;
-  left: 14%;
+  left: 5%;
   color: #fff;
-  animation: fadeInLeft 1s linear ;
+  /*animation: fadeInLeft 1s linear ;*/
   z-index: 10;
 }
 .floor4 .text h1 {
@@ -544,7 +554,7 @@ h2 {
   background-size:contain;
   width: 66px;
   height: 126px;
-  animation: fadeInLeft 1s linear,mov 3s linear infinite;
+  animation: mov 3s linear infinite;
   z-index: 10;
 }
 .floor4 .shu {
@@ -553,7 +563,7 @@ h2 {
   height: 427px;
   float: right;
   margin-top: 10%;
-  animation: fadeInRight 1s linear;
+  /*animation: fadeInRight 1s linear;*/
 }
 .floor4 .kuai {
   width: 100%;
@@ -691,6 +701,10 @@ h2 {
   .floor2 .text span {
     font-size: 76%;
   }
+  .text{
+    left:-100px!important;
+  }
+
   .floor2 .linxian {
     width: 35px!important;
     height: 70px!important;
@@ -705,7 +719,8 @@ h2 {
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    left: 60%;
+    right: 10%;
+    z-index: 999;
   }
   .floor4 .yuan {
     position: absolute;
@@ -717,4 +732,7 @@ h2 {
     background-size: contain ;
     z-index: 0;
   }
+  /*.shu{
+    right:-1200px!important;
+  }*/
 }
