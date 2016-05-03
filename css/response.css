@@ -1,0 +1,195 @@
+.container {
+  height: auto;
+  display: block;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-fluid {
+  height: auto;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container .row,
+.container-fluid .row {
+  display: block;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.container .row:after,
+.container-fluid .row:after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.col-xs-1 {
+  width: 10%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-2 {
+  width: 20%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-3 {
+  width: 30%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-4 {
+  width: 40%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-5 {
+  width: 50%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-6 {
+  width: 60%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-7 {
+  width: 70%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-8 {
+  width: 80%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-9 {
+  width: 90%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-10 {
+  width: 100%;
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*手机端的栅格结束*/
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 970px;
+  }
+  .col-md-1 {
+    width: 10%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-2 {
+    width: 20%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-3 {
+    width: 30%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-4 {
+    width: 40%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-5 {
+    width: 50%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-6 {
+    width: 60%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-7 {
+    width: 70%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-8 {
+    width: 80%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-9 {
+    width: 90%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-md-10 {
+    width: 100%;
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/*隐藏*/
+@media screen and (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .hidden-md {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hidden-sm {
+    display: none;
+  }
+}
